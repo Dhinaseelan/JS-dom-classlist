@@ -24,7 +24,7 @@ event.stopImmediatePropagation();
 })
 pel.addEventListener("click",()=>{console.log("p ")})
 divel.addEventListener("click",()=>{console.log("last div")},)
-
+//capturing enable ca[turing {caturing:true} third argument
 formel.addEventListener("click",()=>{console.log("form")},{capture:true})
 //for catch the capturing phase &  bubbling
 for(let pro of document.querySelectorAll("form, form *")){
