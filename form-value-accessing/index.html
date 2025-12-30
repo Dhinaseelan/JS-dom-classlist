@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <header>
+            <h1>Feedback Form</h1>
+    </header>
+    <main>
+        <h4>Feedback Form</h4>
+        
+        <form action="" name="Feedback">
+            <div>
+                <input type="text" name="name" placeholder="Enter Your First Nmae ">
+            </div>
+            <div class="d-flex">
+            <div class="d-flex">
+                <input type="radio" name="type"  value="" id="general-feedback">
+                <label for="general-feedback">General Feedback</label>
+            </div>
+             <div class="d-flex">
+                <input type="radio" name="type" value="" id="technical-support">
+                <label for="technical-support">Techcical Support</label>
+            </div>
+             <div class="d-flex">
+                <input type="radio" name="type" value="" id="contribution">
+                <label for="contribution">Contribution</label>
+            </div>
+            </div>
+            <div>
+                <input type="email" name="email" placeholder="you@gmail.com">
+            </div>
+            <div>
+                <textarea name="discription" id="" rows="4" placeholder="Enter Your Feedback Briefly!"></textarea>
+            </div>
+            <div>
+                <label for="terms">
+                    <input type="checkbox" id="terms">I accept terms and conditions.
+                </label>
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+    
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

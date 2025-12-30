@@ -1,0 +1,45 @@
+ body{
+                background-color: bisque;
+            }
+            h4{
+                text-align: center;
+            }
+            form{
+                margin: 10px auto;
+                background-color: #ffffff;
+                padding: 20px;
+                border-radius: 5px;
+                width: 90%;
+            }
+            form *{
+                margin: 5px;
+                width: 100%;
+            }
+            form input,textarea{
+                padding: 5px 10px;
+                font-size: 10px;
+                border:1px solid gainsboro;
+                border-radius: 5px;
+                width: 97%;
+            }
+            button{
+                padding: 5px 10px;
+                background-color: royalblue;
+                border: none;
+                color: #fff;
+                border-radius: 5px;
+
+            }
+            form label{
+                display:flex ;
+                align-items: center;
+                font-size: 10px;
+                color: gray;
+                user-select:none;
+            }
+            form label input,form input[type="radio"]{
+                width: auto;
+            }
+            .d-flex{
+                display: flex;
+            }
