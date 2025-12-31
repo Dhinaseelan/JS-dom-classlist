@@ -8,8 +8,7 @@ document.addEventListener("keyup",(event)=>{
             alert("you clicked down arrow");
             break;
         case "ArrowLeft":
-            alert("you cliked left arrow");
-            break;
+            --alert("you cliked left arrow");    
         case "ArrowRight":
             alert("you clicked right arrow");
             break;
@@ -17,4 +16,4 @@ document.addEventListener("keyup",(event)=>{
             alert("you clicked wrong button");
             break;
     }
-})n
+})

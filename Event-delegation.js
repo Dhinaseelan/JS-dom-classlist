@@ -27,3 +27,6 @@ formel.addEventListener("submit",(event)=>{
     alert(`thank you for donating ${amt}`)
     console.log(amt);
 })
+document.addEventListener("mousedown",(event)=>{
+    console.log(event);
+})
