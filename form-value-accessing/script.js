@@ -21,8 +21,20 @@ const formval=document.forms.Feedback;// accessing forms by form name
 const handleform=(event)=>{
     event.preventDefault()
     const formdata=new FormData(formval);
+    const data=[...formdata.entries()];
+    const datastring= data.map((key,value)=>`${encodeURIComponent(key)}=${encodeURIComponent(value)}`).join("&");
+    console.log("old:",datastring);
+    const urlsearch=new URLSearchParams(formdata).toString();
+    console.log("urlspar:",urlsearch);
+    //converting json format
+    const prejson=Object.fromEntries(formdata);
+    console.log(JSON.stringify(prejson));
 
-}
+    
+   
+    
+
+}//this old method data to server formating
 const handleformdata=(e)=>{
     const formData=e.formData;
     console.log(formData);
@@ -37,7 +49,8 @@ const handleformdata=(e)=>{
     //it returns the entier keys of form data
     console.log([...formData.key()]);
     //it return the entier values of the formdata
-    console.log([...formData.values()])
-}
+    console.log([...formData.values()])}
+
+
 formval.addEventListener("submit",handleform);
 formval.addEventListener("formdata",handleformdata);
