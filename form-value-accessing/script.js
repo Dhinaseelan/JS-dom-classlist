@@ -27,12 +27,25 @@ const handleform=(event)=>{
     const urlsearch=new URLSearchParams(formdata).toString();
     console.log("urlspar:",urlsearch);
     //converting json format
+    const jsondata=JSON.stringify(Object.fromEntries(formdata));
     const prejson=Object.fromEntries(formdata);
     console.log(JSON.stringify(prejson));
 
-    
-   
-    
+    //sending data to backend using XMLHttprequest
+    // const xmlhreq= new XMLHttpRequest()
+    // xmlhreq.open("GET","https://reqres.in/api/users/2",true);
+    // xmlhreq.onload=()=>{
+    //     console.log(JSON.parse(xmlhreq.responseText))
+    // };
+    // xmlhreq.send()  
+    //fetch method 
+    fetch("https://jsonplaceholder.typicode.com/users",{
+        method:"GET",
+        // headers:{
+        //     "Content-Type":"application/json"//MIME
+        // },
+        // body:jsondata;
+    }).then(data=>data.json()).then((data)=>{document.getElementById("output").innerText=JSON.stringify(data[0])});
 
 }//this old method data to server formating
 const handleformdata=(e)=>{
