@@ -67,3 +67,15 @@ const handleformdata=(e)=>{
 
 formval.addEventListener("submit",handleform);
 formval.addEventListener("formdata",handleformdata);
+formval.name.addEventListener("change",(e)=>{document.getElementById("invate").innerText=`hello ${e.target.value} thank you for visiting`;});
+//1.attributes
+// formval.name.value="kathir";
+// formval.name.disabled=true;
+formval.name.readOnly=true;
+//----------------------------------events--------------------------------------------//
+formval.name.addEventListener("blur",()=>console.log("blur"));
+formval.name.addEventListener("focus",()=>console.log("focused"));
+//---------------------------------input-method---------------------------------------//
+formval.name.focus();
+formval.name.blur()
+
