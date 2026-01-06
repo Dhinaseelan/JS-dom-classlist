@@ -12,23 +12,23 @@
             <h1>Feedback Form</h1>
     </header>
     <main>
-        <h4>Feedback Form</h4>
+        <h4 id="invate">Feedback Form</h4>
         
         <form action="" name="Feedback">
             <div>
                 <input type="text" name="name" placeholder="Enter Your First Nmae " required>
             </div>
+            <div class="d-flex" id="radio-inputs">
             <div class="d-flex">
-            <div class="d-flex">
-                <input type="radio" name="type"  value="" id="general-feedback" required>
+                <input type="radio" name="type"  value="general-feedback" id="general-feedback" required>
                 <label for="general-feedback">General Feedback</label>
             </div>
              <div class="d-flex">
-                <input type="radio" name="type" value="" id="technical-support" required>
+                <input type="radio" name="type" value="technical-support" id="technical-support" required>
                 <label for="technical-support">Techcical Support</label>
             </div>
              <div class="d-flex">
-                <input type="radio" name="type" value="" id="contribution" required>
+                <input type="radio" name="type" value="contribution" id="contribution" required>
                 <label for="contribution">Contribution</label>
             </div>
             </div>
@@ -47,6 +47,9 @@
                 <button>Submit</button>
             </div>
         </form>
+        <div id="output">
+            
+        </div>
     
     </main>
     <script src="script.js"></script>

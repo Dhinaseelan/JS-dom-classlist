@@ -78,4 +78,32 @@ formval.name.addEventListener("focus",()=>console.log("focused"));
 //---------------------------------input-method---------------------------------------//
 formval.name.focus();
 formval.name.blur()
+//--------------------------------- radio input Elements----------------------------------//
+const radioinput=formval.elements.type;
+const allradioin=[...radioinput];
+//attributes
+// allradioin.forEach((val)=>{
+//     console.log(val.checked);
+//     console.log(val.value)
+// });
+//-----------------------------------------------------------------------------------------------
+//-----------------------------------events------------------------------------------------------
+const goble=document.getElementById("radio-inputs");
 
+goble.addEventListener("change",(e)=>{
+        //method one
+        // console.log(e.target.value);
+        //metho two
+       console.log(allradioin.find((checked)=>checked.checked).value);
+
+})
+//--------------------------------task---------------------------------------------------------------
+goble.addEventListener("change",(e)=>{
+    if(e.target.value=="contribution"){
+        setTimeout(()=>{alert(`thank you for your contribution`)},1000)
+    }
+})
+//-------------------------------------------------------------------------------------------------
+//---------------------------------methods---------------------------------------------------------
+allradioin[0].select();
+allradioin[1].checked=true;
