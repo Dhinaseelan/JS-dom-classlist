@@ -100,10 +100,33 @@ goble.addEventListener("change",(e)=>{
 //--------------------------------task---------------------------------------------------------------
 goble.addEventListener("change",(e)=>{
     if(e.target.value=="contribution"){
-        setTimeout(()=>{alert(`thank you for your contribution`)},1000)
+        setTimeout(()=>alert(`thank you for your contribution`),1000)
     }
 })
 //-------------------------------------------------------------------------------------------------
 //---------------------------------methods---------------------------------------------------------
 allradioin[0].select();
 allradioin[1].checked=true;
+
+//----------------------------------------------------------------------------------
+//---------------------------------get properties and method------------------------
+// const hobbies=formval.elements.hobbies;
+const terms=formval.elements.terms
+// console.log(hobbies);
+// const arrhoobies=[...hobbies]
+// arrhoobies.forEach((val)=>{
+//     console.log(val.checked);
+// })
+// console.log(arrhoobies[1].value);
+//------------------------------------------------------------
+//-------------------------------attributes------------------------
+//=========================================================
+terms.checked=true;
+//==============================events==============================
+terms.addEventListener("change",(e)=>{
+    if(e.target.checked===true)alert("your aceptiing terms and condition")
+    
+})
+//=============================method========================
+terms.select();
+terms.checked=true;
