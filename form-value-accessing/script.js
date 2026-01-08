@@ -130,3 +130,25 @@ terms.addEventListener("change",(e)=>{
 //=============================method========================
 terms.select();
 terms.checked=true;
+//HTML SELECT TAG////////////
+const optionEl=formval.elements.country;
+console.log(optionEl);
+//-----------------------------properties-----------------------------
+console.log("hello")
+console.log(optionEl.value)
+optionEl.value="IND";
+optionEl.selectedIndex=3;
+console.log(country[2].value)
+//---------------------------selected DOM Elements--------------------
+console.log(country.options[country.selectedIndex].value);
+//---------------------------events-----------------------------------
+country.addEventListener("change",(e)=>{
+    console.log(e.target.options[country.selectedIndex].text)
+})
+//--------------------------using DoM methods-------------------------
+
+const newoption=new Option("south africa","FAZ")
+//--------------------------adding option to selected tag-------------
+optionEl.add(newoption,2);
+//---------------------------remove option form selected tab
+optionEl.remove(1);
